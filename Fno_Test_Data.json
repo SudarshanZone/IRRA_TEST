@@ -1,0 +1,56 @@
+{
+    "FcpDetails": [
+      {
+        "FFO_CONTRACT": "FUT-BSESEN-12-Jul-2024",
+        "FFO_PSTN": "BUY",
+        "FFO_QTY": "300",
+        "FFO_AVG_PRC": "264605",
+        "FCP_XCHNG_CD": "BFO",
+        "FCP_IBUY_QTY": "290",
+        "FCP_CLM_MTCH_ACCNT": "8509041939",
+        "FCP_PRDCT_TYP": "F",
+        "FCP_INDSTK": "I",
+        "FCP_UNDRLYNG": "BSESEN",
+        "FCP_EXPRY_DT": "12-Jul-2024",
+        "FCP_EXER_TYP": "E",
+        "FCP_OPT_TYP": "*",
+        "FCP_STRK_PRC": "4000",
+        "FCP_OPNPSTN_FLW":"B"
+      },
+      {
+        "FFO_CONTRACT": "FUT-BSESEN-12-Jul-2024",
+        "FFO_PSTN": "BUY",
+        "FFO_QTY": "300",
+        "FFO_AVG_PRC": "264605",
+        "FCP_XCHNG_CD": "BFO",
+        "FCP_IBUY_QTY": "290",
+        "FCP_CLM_MTCH_ACCNT": "8509041939",
+        "FCP_PRDCT_TYP": "F",
+        "FCP_INDSTK": "I",
+        "FCP_UNDRLYNG": "BSESEN",
+        "FCP_EXPRY_DT": "12-Jul-2024",
+        "FCP_EXER_TYP": "E",
+        "FCP_OPT_TYP": "*",
+        "FCP_STRK_PRC": "4000",
+        "FCP_OPNPSTN_FLW":"B"
+      },  
+      {
+        "FFO_CONTRACT": "FUT-BSESEN-12-Jul-2024",
+        "FFO_PSTN": "BUY",
+        "FFO_QTY": "300",
+        "FFO_AVG_PRC": "264605",
+        "FCP_XCHNG_CD": "BFO",
+        "FCP_IBUY_QTY": "290",
+        "FCP_CLM_MTCH_ACCNT": "8509041939",
+        "FCP_PRDCT_TYP": "F",
+        "FCP_INDSTK": "I",
+        "FCP_UNDRLYNG": "BSESEN",
+        "FCP_EXPRY_DT": "12-Jul-2024",
+        "FCP_EXER_TYP": "E",
+        "FCP_OPT_TYP": "*",
+        "FCP_STRK_PRC": "4000",
+        "FCP_OPNPSTN_FLW":"B"
+      }
+    ]
+  }
+  

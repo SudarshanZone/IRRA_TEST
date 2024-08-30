@@ -1,0 +1,9 @@
+go 1.22.5
+
+use (
+    ./ApplicationServer/Open_Pos
+    ./Webserver
+    ./ApplicationServer/Ord_Dtls_Service
+)
+
+
