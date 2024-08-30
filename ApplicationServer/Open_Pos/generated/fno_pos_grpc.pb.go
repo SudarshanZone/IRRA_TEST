@@ -27,8 +27,15 @@ const (
 // FnoPositionServiceClient is the client API for FnoPositionService service.
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
+<<<<<<< HEAD
 type FnoPositionServiceClient interface {
 	GetFNOPosition(ctx context.Context, in *FnoPositionRequest, opts ...grpc.CallOption) (*FnoPositionResponse, error)
+=======
+//
+// Request message
+type FnoPositionServiceClient interface {
+	GetFNOPosition(ctx context.Context, in *FnoPositionRequest, opts ...grpc.CallOption) (*FcpDetailListResponse, error)
+>>>>>>> master
 }
 
 type fnoPositionServiceClient struct {
@@ -39,9 +46,15 @@ func NewFnoPositionServiceClient(cc grpc.ClientConnInterface) FnoPositionService
 	return &fnoPositionServiceClient{cc}
 }
 
+<<<<<<< HEAD
 func (c *fnoPositionServiceClient) GetFNOPosition(ctx context.Context, in *FnoPositionRequest, opts ...grpc.CallOption) (*FnoPositionResponse, error) {
 	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
 	out := new(FnoPositionResponse)
+=======
+func (c *fnoPositionServiceClient) GetFNOPosition(ctx context.Context, in *FnoPositionRequest, opts ...grpc.CallOption) (*FcpDetailListResponse, error) {
+	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
+	out := new(FcpDetailListResponse)
+>>>>>>> master
 	err := c.cc.Invoke(ctx, FnoPositionService_GetFNOPosition_FullMethodName, in, out, cOpts...)
 	if err != nil {
 		return nil, err
@@ -52,8 +65,15 @@ func (c *fnoPositionServiceClient) GetFNOPosition(ctx context.Context, in *FnoPo
 // FnoPositionServiceServer is the server API for FnoPositionService service.
 // All implementations must embed UnimplementedFnoPositionServiceServer
 // for forward compatibility.
+<<<<<<< HEAD
 type FnoPositionServiceServer interface {
 	GetFNOPosition(context.Context, *FnoPositionRequest) (*FnoPositionResponse, error)
+=======
+//
+// Request message
+type FnoPositionServiceServer interface {
+	GetFNOPosition(context.Context, *FnoPositionRequest) (*FcpDetailListResponse, error)
+>>>>>>> master
 	mustEmbedUnimplementedFnoPositionServiceServer()
 }
 
@@ -64,7 +84,11 @@ type FnoPositionServiceServer interface {
 // pointer dereference when methods are called.
 type UnimplementedFnoPositionServiceServer struct{}
 
+<<<<<<< HEAD
 func (UnimplementedFnoPositionServiceServer) GetFNOPosition(context.Context, *FnoPositionRequest) (*FnoPositionResponse, error) {
+=======
+func (UnimplementedFnoPositionServiceServer) GetFNOPosition(context.Context, *FnoPositionRequest) (*FcpDetailListResponse, error) {
+>>>>>>> master
 	return nil, status.Errorf(codes.Unimplemented, "method GetFNOPosition not implemented")
 }
 func (UnimplementedFnoPositionServiceServer) mustEmbedUnimplementedFnoPositionServiceServer() {}

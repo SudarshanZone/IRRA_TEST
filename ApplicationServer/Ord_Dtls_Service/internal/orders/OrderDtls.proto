@@ -10,6 +10,7 @@ message OrderDetailsRequest {
     string FOD_CLM_MTCH_ACCNT = 1; 
 }
 
+<<<<<<< HEAD
 message OrderDetailsResponse {
     repeated string ContractDescriptor = 1;
     repeated string VTCDate = 2;
@@ -20,12 +21,34 @@ message OrderDetailsResponse {
     repeated string Open = 7;
 
     
+=======
+message OrdDetail {
+    string ContractDescriptor = 1;
+    string VTCDate = 2;
+    string BuySell = 3;
+    int32 Quantity = 4;
+    string Status = 5;
+    float OrderPrice = 6;
+    string Open = 7;
+}
+
+message OrderDetailsResponse {
+    repeated OrdDetail OrdDetails = 1;
+>>>>>>> master
 }
 
 service OrderDetailsService {
     rpc GetOrderDetails(OrderDetailsRequest) returns (OrderDetailsResponse);
 }
+<<<<<<< HEAD
 //protoc --proto_path=internal --go_out=internal/generated --go-grpc_out=internal/generated internal/positions/fno_pos.proto
 
 //Updated internal/generated to generated
 //protoc --proto_path=internal --go_out=generated --go-grpc_out=generated internal/positions/fno_pos.proto
+=======
+
+//protoc --proto_path=internal --go_out=internal/generated --go-grpc_out=internal/generated internal/positions/fno_pos.proto
+
+//Updated internal/generated to generated
+//protoc --proto_path=internal --go_out=generated --go-grpc_out=generated internal/orders/OrderDtls.proto
+>>>>>>> master

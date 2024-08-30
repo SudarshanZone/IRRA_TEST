@@ -6,10 +6,13 @@ import (
 
 	"github.com/gin-gonic/gin"
 	log "github.com/sirupsen/logrus"
+<<<<<<< HEAD
 
 	// pb "github.com/SudarshanZone/Open_Pos/generated"
 	// ob "github.com/SudarshanZone/Ord_Dtls/generated"
 	// "github.com/SudarshanZone/Web_Server/internal/grpc"
+=======
+>>>>>>> master
 )
 
 func SetupRoutes(router *gin.Engine, facade Facade, logger *log.Entry) {

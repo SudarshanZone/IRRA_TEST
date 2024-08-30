@@ -2,7 +2,17 @@ module github.com/SudarshanZone/Ord_Dtls
 
 go 1.22.5
 
+<<<<<<< HEAD
 require gorm.io/gorm v1.25.11
+=======
+require (
+	google.golang.org/grpc v1.65.0
+	google.golang.org/protobuf v1.34.1
+	gopkg.in/ini.v1 v1.67.0
+	gorm.io/driver/postgres v1.5.9
+	gorm.io/gorm v1.25.11
+)
+>>>>>>> master
 
 require (
 	github.com/jinzhu/inflection v1.0.0 // indirect
@@ -20,8 +30,11 @@ require (
 	golang.org/x/sync v0.7.0 // indirect
 	golang.org/x/sys v0.20.0 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20240528184218-531527333157 // indirect
+<<<<<<< HEAD
 	google.golang.org/grpc v1.65.0 // indirect
 	google.golang.org/protobuf v1.34.1 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gorm.io/driver/postgres v1.5.9 // indirect
+=======
+>>>>>>> master
 )

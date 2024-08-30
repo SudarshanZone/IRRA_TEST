@@ -18,6 +18,7 @@ func (s *OrderDetailsService) GetOrderDetails(ctx context.Context, req *pb.Order
 		return nil, fmt.Errorf("failed to get order details: %w", err)
 	}
 
+<<<<<<< HEAD
 	response := &pb.OrderDetailsResponse{}
 	for _, detail := range orderDetails {
 		response.ContractDescriptor = append(response.ContractDescriptor, detail.ContractDescriptor)
@@ -30,4 +31,25 @@ func (s *OrderDetailsService) GetOrderDetails(ctx context.Context, req *pb.Order
 	}
 
 	return response, nil
+=======
+	var ordDetails []*pb.OrdDetail
+
+	for _, ord := range orderDetails {
+		// Create a new OrdDetail and add it to the slice
+		ordDtls := &pb.OrdDetail{
+			ContractDescriptor: ord.ContractDescriptor,
+			VTCDate:            ord.VTCDate,
+			BuySell:            ord.BuySell,
+			Quantity:           ord.Quantity,
+			Status:             ord.Status,
+			OrderPrice:         ord.OrderPrice,
+			Open:               ord.Open,
+		}
+		ordDetails = append(ordDetails, ordDtls)
+	}
+
+	return &pb.OrderDetailsResponse{
+		OrdDetails: ordDetails,
+	}, nil
+>>>>>>> master
 }

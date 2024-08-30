@@ -81,6 +81,7 @@ func (cm *ConfigManager) GetDatabaseConnection(serviceName string, cfg common.Po
 func (cm *ConfigManager) GetDB(serviceName string) *gorm.DB {
 	return cm.database.Db
 }
+<<<<<<< HEAD
 
 
 //ApplicationServer\Open_Pos\config\PosgresqlConfig.go
@@ -179,3 +180,5 @@ func (cm *ConfigManager) GetDB(serviceName string) *gorm.DB {
 // 	log.Printf("[%s] GetDb is called and Returning the Database instance ", serviceName)
 // 	return cm.database.Db // Return the GORM database connection instance
 // }
+=======
+>>>>>>> master

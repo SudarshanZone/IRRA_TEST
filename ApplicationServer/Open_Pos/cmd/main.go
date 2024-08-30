@@ -46,6 +46,7 @@ func main() {
 		log.Fatalf("Failed to serve gRPC server: %v", err)
 	}
 }
+<<<<<<< HEAD
 // package main
 
 // import (
@@ -93,3 +94,5 @@ func main() {
 // 		log.Fatalf("Failed to serve gRPC server: %v", err)
 // 	}
 // }
+=======
+>>>>>>> master

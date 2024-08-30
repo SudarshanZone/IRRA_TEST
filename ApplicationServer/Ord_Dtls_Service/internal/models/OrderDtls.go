@@ -1,4 +1,5 @@
 package models
+<<<<<<< HEAD
 
 type FnoPosition struct {
 	Contract            string  `gorm:"column:FFO_CONTRACT"`
@@ -18,6 +19,8 @@ type FnoPosition struct {
 	UCCCode             string  `gorm:"column:FCP_UCC_CD"`
 }
 
+=======
+>>>>>>> master
 type OrderDetails struct {
     ContractDescriptor string  `gorm:"column:ContractDescriptor"`
     VTCDate            string  `gorm:"column:VTCDate"`
